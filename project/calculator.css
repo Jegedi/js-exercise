@@ -1,0 +1,39 @@
+.container {
+  width: 300px;
+  background-color: #598eb6;
+  background-size: contain;
+  display: grid;
+  grid-template-rows: 20px 20px 20px ;
+  gap: 10px;
+  align-items: center;
+  justify-items: center;
+  border-radius: 30px;
+  margin-left: 20px;
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+button {
+  width: 50px;
+  height: 25px;
+  background-color: #BCE0FA;
+  color: white;
+  font-size: 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #19ACFF;
+}
+.result-btn{
+  width: auto;
+}
+.btn-sign {
+  background-color: #84b5de;
+}
+.btn-equals {
+  background-color: #19ACFF;
+}
+.btn-clear {
+  width: 215px;
+}
