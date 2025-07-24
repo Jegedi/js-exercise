@@ -1,0 +1,19 @@
+<!-- 5h.html -->
+<!DOCTYPE html>
+<html>
+  <head><title>Lesson 5h</title></head>
+  <body>
+    <h2>Cart Quantity: <span id="quantity">0</span></h2>
+    <button onclick="updateCart(4)">+4</button>
+    <button onclick="updateCart(5)">+5</button>
+
+    <script>
+      let cartQuantity = 0;
+
+      function updateCart(amount) {
+        cartQuantity += amount;
+        document.getElementById('quantity').innerText = cartQuantity;
+      }
+    </script>
+  </body>
+</html>

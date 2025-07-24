@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lesson 5k</title>
+  </head>
+  <body>
+    <h2>Cart Quantity: <span id="quantity">0</span></h2>
+
+  
+    <button onclick="cartQuantity += 4; updateDisplay();">+4</button>
+    <button onclick="cartQuantity += 5; updateDisplay();">+5</button>
+
+    
+    <button onclick="cartQuantity--; updateDisplay();">Remove 1 (--)</button>
+    <button onclick="cartQuantity -= 2; updateDisplay();">-2</button>
+    <button onclick="cartQuantity -= 3; updateDisplay();">-3</button>
+
+    <script>
+      let cartQuantity = 0;
+
+      function updateDisplay() {
+        document.getElementById('quantity').innerText = cartQuantity;
+      }
+    </script>
+  </body>
+</html>

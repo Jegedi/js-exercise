@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+  <head><title>Lesson 5j</title></head>
+  <body>
+    <h2>Cart Quantity: <span id="quantity">0</span></h2>
+    <button onclick="updateCart(4)">+4</button>
+    <button onclick="updateCart(5)">+5</button>
+    <button onclick="updateCart(-1)">Remove from cart</button>
+    <button onclick="updateCart(-2)">-2</button>
+    <button onclick="updateCart(-3)">-3</button>
+
+    <script>
+      let cartQuantity = 0;
+
+      function updateCart(amount) {
+        cartQuantity += amount;
+        document.getElementById('quantity').innerText = cartQuantity;
+      }
+    </script>
+  </body>
+</html>
